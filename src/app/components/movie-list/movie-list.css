@@ -1,9 +1,18 @@
-.movie-list{
+.movie-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 20px 0px;
-    background-color: black;
+    background: linear-gradient(270deg, #000000, #FEC606, #1a1a1a, #FFD93D);
+    background-size: 800% 800%;
+    animation: gradientMovieList 15s ease infinite;
+}
+
+/* Animation gradient dynamique */
+@keyframes gradientMovieList {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .movie-card{
@@ -23,13 +32,13 @@
 }
 
 img {
-    width: 410px;
+    width: 360px;
     height: 100%;
     object-fit: cover;
 }
 .movie-details{
     text-align: center;
-    width: 400px;
+    width: 350px;
     padding: 5px;
 }
 

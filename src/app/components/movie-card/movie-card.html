@@ -1,15 +1,12 @@
 @if (movie) {
 <div class="movie-container">
-     <!-- IMAGE DU FILM -->
      <div>
          <img [src]="`https://image.tmdb.org/t/p/w500/${movie.poster_path}`" [alt]="movie.title">
      </div>
 
-     <!-- DETAILS DU FILM -->
      <div class="movie-details">
         <h1>{{ movie.title }}</h1>
 
-        <!-- BOUTON UNIQUE DYNAMIQUE -->
         <button 
             (click)="toggleWishList(movie)"
             [ngClass]="inWishList ? 'remove-btn' : 'add-btn'"
@@ -17,12 +14,8 @@
           {{ inWishList ? 'Remove from wishlist' : 'Add to wishlist' }}
         </button>
 
-        <!-- INFOS DU FILM -->
         <label>Original title:</label>
         <p>{{ movie.original_title }}</p>
-
-        <label>Title:</label>
-        <p>{{ movie.title }}</p>
 
         <label>Original language:</label>
         <p>{{ movie.original_language | uppercase }}</p>
@@ -51,7 +44,6 @@
      </div>
 </div>
 
-<!-- TOAST FIXE EN BAS DE L'ÉCRAN -->
 <div *ngIf="toastMessage" class="toast-bottom" [ngClass]="toastType">
   {{ toastMessage }}
 </div>

@@ -11,7 +11,7 @@ import { Movie } from '../../Interfaces/movie';
 })
 export class WishList {
 movieService=inject(MovieService)
-router=inject(Router)  
+router=inject(Router) 
 navigateTo(id:number){
 this.router.navigate(['', id])
   }

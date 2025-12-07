@@ -49,7 +49,7 @@ export class MovieCard implements OnInit {
 
     setTimeout(() => {
       this.toastMessage = '';
-    }, 3000); // le toast disparaît après 3 secondes
+    }, 3000); 
   }
 
 }

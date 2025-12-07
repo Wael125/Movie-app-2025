@@ -1,9 +1,40 @@
-.movie-list{
+.movie-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px 0px;
-    background-color: black;
+    padding: 0px 0px;
+    background: linear-gradient(270deg, #000000, #FEC606, #1a1a1a, #FFD93D);
+    background-size: 800% 800%;
+    animation: gradientMovieList 15s ease infinite;
+}
+.wishlist-header {
+  position: sticky; /* ou 'fixed' si tu veux toujours visible */
+  top: 0;           /* toujours en haut */
+  width: 100%;
+  background: rgb(65, 17, 17); /* Fond dynamique ou uniforme */
+  padding: 0px 0px;
+  z-index: 1000;    /* au-dessus des autres éléments */
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.wishlist-header h1 {
+  font-size: 48px;
+  color: #FEC606;
+  margin-bottom: 10px;
+}
+
+.wishlist-header p {
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+/* Animation gradient dynamique */
+@keyframes gradientMovieList {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .movie-card{
@@ -23,13 +54,13 @@
 }
 
 img {
-    width: 410px;
+    width: 360px;
     height: 100%;
     object-fit: cover;
 }
 .movie-details{
     text-align: center;
-    width: 400px;
+    width: 350px;
     padding: 5px;
 }
 

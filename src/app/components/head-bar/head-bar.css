@@ -11,7 +11,9 @@ h1 {
     1px 1px 2px grey,
     0 0 1em black,
     0 0 0.2em black;
-    font-size: 50px;
+    font-size: 45px;
+    background: linear-gradient(45deg, #7d6902, #FEC606, #7d6902);
+
 }
 
 .title-link {
@@ -19,31 +21,43 @@ h1 {
 }
 
 
-/* ---- Bouton ---- */
-.head-container button {
-  padding: 10px 25px;
-  background-color: black;
-  color: #FEC606;
-  font-weight: 700;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 
-    background-color 0.2s ease,
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-/* Effet hover professionnel */
 .head-container button:hover {
   background-color: #1a1a1a;
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-/* Effet "click" */
 .head-container button:active {
   transform: scale(0.98);
 }
 
+.head-container button {
+  padding: 10px 25px;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fffd90;
+background: linear-gradient(45deg, #000000, #a38105, #000000);
+  background-size: 300% 300%;
+  transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-position 0.5s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+.head-container button:hover {
+  animation: gradientShift 3s ease infinite;
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+.head-container button:active {
+  transform: scale(0.96);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
