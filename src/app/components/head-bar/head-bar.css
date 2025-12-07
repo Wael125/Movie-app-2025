@@ -1,0 +1,49 @@
+.head-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  background-color: #FEC606;
+  align-items: center;
+}
+
+h1 {
+  text-shadow:
+    1px 1px 2px grey,
+    0 0 1em black,
+    0 0 0.2em black;
+    font-size: 50px;
+}
+
+.title-link {
+  cursor: pointer;
+}
+
+
+/* ---- Bouton ---- */
+.head-container button {
+  padding: 10px 25px;
+  background-color: black;
+  color: #FEC606;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Effet hover professionnel */
+.head-container button:hover {
+  background-color: #1a1a1a;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Effet "click" */
+.head-container button:active {
+  transform: scale(0.98);
+}
+

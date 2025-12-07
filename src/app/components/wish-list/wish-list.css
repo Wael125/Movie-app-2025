@@ -1,0 +1,41 @@
+.movie-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    background-color: black;
+}
+
+.movie-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 5px;
+    height: fit-content;
+    width: fit-content;
+    /* padding: 20px; */
+    background-color: #FEC606; 
+    cursor: pointer;
+}
+
+.movie-card:hover{
+    box-shadow: 0 0 20px 10px rgba(233, 237, 237, 0.8);
+}
+
+img {
+    width: 410px;
+    height: 100%;
+    object-fit: cover;
+}
+.movie-details{
+    text-align: center;
+    width: 400px;
+    padding: 5px;
+}
+
+h2 {
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
