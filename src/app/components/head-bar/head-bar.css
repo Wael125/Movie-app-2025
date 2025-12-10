@@ -7,13 +7,13 @@
 }
 
 h1 {
-  text-shadow:
-    1px 1px 2px grey,
-    0 0 1em black,
-    0 0 0.2em black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 45px;
-    background: linear-gradient(45deg, #7d6902, #FEC606, #7d6902);
-
+}
+h1:hover 
+{
+  letter-spacing: 1px;
+  transform: scale(1.05);
 }
 
 .title-link {
